@@ -27,6 +27,9 @@ const setupInput = function(conn) {
     if (data === 'd') {
       connection.write('Move: right');
     }
+    if (data === 'q') {
+      connection.write("Say: GG EZ")
+    }
   };
   return stdin;
 }
